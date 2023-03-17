@@ -1,0 +1,52 @@
+.sigma-button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+        inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    transition: background 0.3s ease-in-out;
+}
+
+.sigma-button:hover {
+    background: linear-gradient(135deg, #ee0979, #ff6a00);
+}
+
+.sigma-button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+        inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+}
+
+.sigma-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed; 
+    box-shadow: none; 
+    background: #ddd;
+    color: #ee0979;
+}
+
+.sigma-spinner {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    border: 2px solid #ee0979;
+    border-top-color: #007bff;
+    border-radius: 50%;
+    animation: sigma-spinner 1s ease-in-out infinite;
+  }
+  
+  @keyframes sigma-spinner {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
